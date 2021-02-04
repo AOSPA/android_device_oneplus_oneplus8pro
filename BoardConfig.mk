@@ -14,6 +14,8 @@
 
 include device/oneplus/oneplus8/BoardConfig.mk
 
+VARIANT_PATH := device/oneplus/oneplus8pro
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
@@ -22,3 +24,7 @@ TARGET_OTA_ASSERT_DEVICE := OnePlus8Pro,oneplus8pro
 
 # Properties
 TARGET_SYSTEM_PROP += device/oneplus/oneplus8/system.prop
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(VARIANT_PATH)/sepolicy/vendor
