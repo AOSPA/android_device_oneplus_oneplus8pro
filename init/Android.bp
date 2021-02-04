@@ -18,3 +18,10 @@ prebuilt_etc {
     sub_dir: "init",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.oneplus8pro.power.rc",
+    src: "init.oneplus8pro.power.rc",
+    sub_dir: "init",
+    vendor: true,
+}
